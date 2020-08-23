@@ -61,6 +61,7 @@ public class FXBrowser extends JFXPanel implements ChangeListener<State> {
 		state = State.SCHEDULED;
 		
 		Platform.runLater(() -> {
+			
 			webView = new WebView();
 			webEngine = webView.getEngine();
 			history = webEngine.getHistory();
